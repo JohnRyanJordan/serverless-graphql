@@ -1,10 +1,10 @@
 import React from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
-import AppNavigator from './navigation/AppNavigator';
 import { ApolloProvider } from 'react-apollo';
 import AWSAppSyncClient, { AUTH_TYPE } from 'aws-appsync';
-import gql from 'graphql-tag';
+import AppNavigator from './navigation/AppNavigator';
+// import gql from 'graphql-tag';
 import aws_config from './aws-exports';
 
 const client = new AWSAppSyncClient({
